@@ -12,7 +12,8 @@ import { reactLocalStorage } from "reactjs-localstorage";
 export class Header extends Component {
   state = {
     header: false,
-    redirect: ""
+    redirect: "",
+    user:""
   };
   componentDidMount() {
     var token = reactLocalStorage.get("token");
@@ -62,8 +63,7 @@ export class Header extends Component {
             <div className="dropdown" style={{ float: "right" }}>
               <Avatar className="dropbtn"></Avatar>
               <div className="dropdown-content">
-                <Link to="/profile">Profile</Link>
-                <Link to="/blogs">My blogs</Link>
+                <Link to="/myblogs">My blogs</Link>
                 <Link to="/new">Add new blog</Link>
                 <Link
                   onClick={this.logout}

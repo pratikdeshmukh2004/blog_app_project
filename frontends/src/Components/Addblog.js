@@ -48,14 +48,6 @@ export class Addblog extends Component {
             <br/>
             <TextField
               required
-              name="des"
-              placeholder="Add Small description here..."
-              fullWidth
-            />
-            <br />
-            <br/>
-            <TextField
-              required
               title=""
               name="blog"
               placeholder="Add your blog here..."
@@ -64,14 +56,6 @@ export class Addblog extends Component {
               rowsMax={10}
               variant="outlined"
               rows={4}
-            />
-            <br />
-            <br />
-            <TextField
-              required
-              name="tag"
-              placeholder="tag something here..."
-              fullWidth
             />
             <br/>
             <br/>

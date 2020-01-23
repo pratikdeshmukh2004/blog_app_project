@@ -36,32 +36,9 @@ export class Home extends Component {
   render() {
     return (
       <Box>
-        <Box className="nav">
-          <Breadcrumbs style={{ marginTop: "70px" }} aria-label="breadcrumb">
-            <StyledBreadcrumb
-              style={{ cursor: "pointer" }}
-              component="a"
-              href="#"
-              label="Home"
-              icon={<HomeIcon fontSize="small" />}
-              // onClick={handleClick}
-            />
-            <StyledBreadcrumb
-              style={{ cursor: "pointer" }}
-              component="a"
-              href="#"
-              label="Entertainment"
-              // onClick={handleClick}
-            />
-            <StyledBreadcrumb
-              style={{ cursor: "pointer" }}
-              label="Accessories"
-              deleteIcon={<ExpandMoreIcon />}
-              // onClick={handleClick}
-              // onDelete={handleClick}
-            />
-          </Breadcrumbs>
-        </Box>
+        <br/>
+        <br/>
+        <br/>
         <Container maxWidth="md">
           {this.state.List.map((item, index) => {            
             if (item.image) {

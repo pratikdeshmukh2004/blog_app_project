@@ -50,10 +50,46 @@ module.exports = (app, knex, jwt) => {
         });
     }
   });
-  app.get("/blogs",(req,res)=>{
-    knex.select('*').from("blogs")
+  app.get("/blogs", (req, res) => {
+    knex
+      .select("*")
+      .from("blogs")
+      .then(data => {
+        res.send(data);
+      });
+  });
+  app.get("/blogs/:id",(req,res)=>{
+    knex.select("*").from("blogs").where("id",req.params.id)
     .then((data)=>{
-      res.send(data)
+      if (data.length>0){
+        res.send({result:true,data:data})
+      }else{
+        res.send({result:false})
+      }
+      
+    })
   })
-})
-}
+  app.post("/getuser",(req,res)=>{
+    knex.select("*").from("users").where("id",req.body.userid)
+    .then((data)=>{
+      if (data.length>0){
+        res.send({result:true,user:data})
+      }else{
+        res.send({result:false})
+      }
+      
+    })
+  })
+  app.get("/getblog/:id",(req,res)=>{
+    knex.select("*").from("blogs").where("user_id",req.params.id)
+    .then((resp)=>{
+      res.send(resp)
+    })
+  })
+  app.delete("/delete/:id",(req,res)=>{
+    knex.select("*").from("blogs").where("id",req.params.id).del()
+    .then(()=>{
+      res.send("done")
+    })
+  })
+};

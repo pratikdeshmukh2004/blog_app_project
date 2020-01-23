@@ -12,6 +12,7 @@ import Home from "./Components/Home";
 import Header from "./Components/Header";
 import Addblog from "./Components/Addblog";
 import Blog from "./Components/Blog";
+import Myblog from "./Components/Myblogs";
 export class App extends Component {
   render() {
     return (
@@ -22,6 +23,7 @@ export class App extends Component {
           <Route path="/home" component={()=>(<div><Header/><Home/></div>)}/>
           <Route path="/new" component={()=>(<div><Header/><Addblog/></div>)} />
           <Route path="/blog/:id" component={Blog} />
+          <Route path="/myblogs" component={()=>(<div><Header/><Myblog/></div>)} />
           <Redirect to="/home" />
         </Switch>
       </Router>

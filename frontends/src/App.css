@@ -144,6 +144,10 @@
   text-transform: capitalize;
   text-align: center;
 }
+.blog_image{
+  width: 950px;
+  height: 500px;
+}
 @media only screen and (max-width: 600px) {
   .card #inputs {
     min-width: 270px;
@@ -159,5 +163,9 @@
     width: 100%;
     margin-top: 10px;
     margin-left: 0;
+  }
+  .blog_image{
+    width: 300px;
+    height: 200px;
   }
 }
