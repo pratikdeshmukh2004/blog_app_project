@@ -1,0 +1,163 @@
+.card {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  /* padding: 5px 20px; */
+}
+.card .inputs {
+  min-width: 400px;
+  font-size: 15px;
+}
+#button {
+  margin-top: 20px;
+  min-width: 400px;
+  margin-bottom: 20px;
+}
+.nav {
+  width: fit-content;
+  margin: 70px auto 0px auto;
+}
+.item {
+  cursor: pointer;
+}
+.box {
+  display: flex;
+  margin-top: 20px;
+  padding: 20px;
+}
+.box img {
+  width: 270px;
+  height: 150px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.date {
+  font-size: 15px;
+  font-weight: 600;
+  align-self: flex-start;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.dropbtn {
+  background-color: #3e8e41;
+
+  /* padding: 16px;
+  font-size: 16px; */
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.files input {
+  outline: 2px dashed #92b0b3;
+  outline-offset: -10px;
+  -webkit-transition: outline-offset 0.15s ease-in-out,
+    background-color 0.15s linear;
+  transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+  padding: 120px 0px 85px 35%;
+  text-align: center !important;
+  margin: 0;
+  width: 100% !important;
+}
+
+.files input:focus {
+  outline: 2px dashed #92b0b3;
+  outline-offset: -10px;
+  -webkit-transition: outline-offset 0.15s ease-in-out,
+    background-color 0.15s linear;
+  transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+  border: 1px solid #92b0b3;
+}
+
+.files {
+  position: relative;
+  width: 74%;
+}
+
+.files:after {
+  pointer-events: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 50px;
+  right: 0;
+  height: 56px;
+  content: "";
+  background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
+  display: block;
+  margin: 0 auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.color input {
+  background-color: #f1f1f1;
+}
+
+.files:before {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  right: 0;
+  height: 57px;
+  content: " or drag it here. ";
+  display: block;
+  margin: 0 auto;
+  color: #2ea591;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .card #inputs {
+    min-width: 270px;
+  }
+  #button {
+    min-width: 270px;
+  }
+  .box {
+    display: inline;
+    padding: 0px;
+  }
+  .box img {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
