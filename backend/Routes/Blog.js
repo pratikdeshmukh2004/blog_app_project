@@ -3,9 +3,9 @@ module.exports = (app, knex, jwt) => {
   (aws = require("aws-sdk")),
     app.use(fileupload({ safeFileNames: true, preserveExtension: true }));
   aws.config = {
-    region: "ap-south-1",
-    accessKeyId: "AKIA4OEZSPYREXHMG35U",
-    secretAccessKey: "6eVkeJSLN0U3tZ4eQnYpaYzQBgmCf707FFM1NGB6"
+    region: "Your Region",
+    accessKeyId: "Your accessId",
+    secretAccessKey: "Your secretId"
   };
   var s3 = new aws.S3();
 
