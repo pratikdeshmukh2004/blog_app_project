@@ -1,6 +1,6 @@
-## Blog App
+<h2 align="center" >Blog App</h2>
 
-In this project i made blog app like medium their you can add some posts.I have divided app in two part backend and frontend you can visite this app from this link http://13.126.28.110:5005/
+In this project i made blog app like medium their you can add some posts.I have divided app in two part backend and frontend you can visite this app [CLICK ME OPEN](http://13.126.28.110:5005/)
 
 #### Backend
 
